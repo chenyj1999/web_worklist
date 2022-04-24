@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFCCCC;
+    color: #7373e2;
+    text-align: center;
+    margin: 15px;
+    font-size: 16px;
+    font-family: "微軟正黑體";
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0px 20px;
+}
+
+@media (min-width: 992px) {
+
+    .col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0px 15px;
+    }
+    .border-right{
+        border-right-style: dotted;
+    }
+}
+
+table,
+th,
+td {
+    border: 2px solid white;
+}
+
+th,
+td {
+    padding: 5px 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr:hover {
+    background-color: rgba(245, 243, 243, 0.363);
+}
+
+th {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+a:link {
+    color: #7373e2;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #996666;
+    text-decoration: green wavy underline;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: rgb(12, 165, 12);
+}
